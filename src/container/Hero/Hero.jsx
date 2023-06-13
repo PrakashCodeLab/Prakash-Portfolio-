@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.scss";
 import ImgSection from "./ImgSection";
 
-import MyResume from "../../assets/Doc/Prakash resume.pdf";
+import MyResume from "../../assets/Doc/Resume.pdf";
 import Line from "../../components/ProjectCard/Line";
 
 const Hero = () => {

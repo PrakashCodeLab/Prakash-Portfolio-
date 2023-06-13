@@ -1,6 +1,6 @@
 import Line from "../../components/ProjectCard/Line";
 import "./SocialSection.scss";
-import resumeDoc from "../../assets/Doc/prakash resume.pdf";
+import ResumeDoc from "../../assets/Doc/Resume.pdf";
 import {
   AiFillFacebook,
   AiFillInstagram,
@@ -35,7 +35,7 @@ const SocialSection = () => {
       id: 4,
       socialName: "resume",
       socialIcon: <AiOutlineDownload />,
-      socialLink: resumeDoc,
+      socialLink:ResumeDoc,
     },
     {
       id: 5,
