@@ -55,3 +55,23 @@ body {
   display: grid;
   place-items: center;
 }
+
+/* For Webkit-based browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #020c1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555; /* Color of the thumb */
+  border-radius: 6px; /* Rounder corners for the thumb */
+}
+
+/* For Firefox */
+/* Note: Firefox currently only supports styling the scrollbar color */
+/* To achieve background color change, you can use an addon like "simple-scrollbar" */
+/* Learn more: https://addons.mozilla.org/en-US/firefox/addon/simple-scrollbar/ */
+
