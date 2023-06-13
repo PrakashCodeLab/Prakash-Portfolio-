@@ -4,12 +4,13 @@ import {BiLinkExternal } from 'react-icons/bi';
 import {DiJavascript1} from 'react-icons/di';
 import {BsGithub} from 'react-icons/bs';
 import {BsFiletypeScss} from 'react-icons/bs';
+
 import  ProjectImg1 from '../../assets/images/project/website app.png'
 import  ProjectImg2 from '../../assets/images/project/shusie web.jpg'
 import  ProjectImg3 from '../../assets/images/project/648072ef9ae5eb350d6ec46b.jpg'
 import  ProjectImg4 from '../../assets/images/project/movie app.jpg'
 import  ProjectImg5 from '../../assets/images/project/movie.jpg'
-
+import ProjectImg6  from "../../assets/images/project/prakash portfolio.png"
 
 const ProjectCard = () => {
 
@@ -83,6 +84,22 @@ const ProjectCard = () => {
          icon1: <FaHtml5 className='icon'/>,
          icon2: <FaCss3Alt className='icon'/>,
          icon3: <DiJavascript1 className='icon'/>,
+
+       },
+       {
+         id: 6,
+         title: "my portfolio",
+         description:
+           "This project showcases my skills in developing responsive and visually appealing web applications using SCSS and React.",
+         poster: ProjectImg6,
+        
+         tech1: "scss",
+         tech2: "react",
+         webLink: "https://prakash-portfolio-delta.vercel.app/",
+         gitLink: "https://github.com/PrakashCodeLab/Prakash-Portfolio-.git",
+         icon1: <BsFiletypeScss className='icon'/>,
+         
+         icon2: <FaReact className='icon'/>,
 
        },
      ];
