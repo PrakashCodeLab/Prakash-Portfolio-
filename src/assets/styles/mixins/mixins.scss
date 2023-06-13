@@ -1,0 +1,71 @@
+
+
+
+@mixin radius($round){
+    border-radius: $round;
+    -webkit-border-radius: $round;
+    -moz-border-radius: $round;
+    -ms-border-radius: $round;
+    -o-border-radius: $round;
+}
+
+
+$Small : 576px;
+$Medium : 767px;
+$Tablet : 768px;
+$Large : 992px;
+$Extra-large: 1280px ;
+
+@mixin max-screen($screen-width){
+    @media only screen and (max-width:$screen-width) {
+        @content;
+      }
+}
+
+@mixin  min-screen($screen-width){
+    @media only screen and (min-width:$screen-width) {
+        @content;
+      }
+}
+
+@mixin small-to-medium {
+    @media only screen and (min-width: $Small) and (max-width: $Medium) {
+      @content;
+    }
+  }
+
+  @mixin above-medium-below-large {
+    @media only screen and (min-width: #{$Medium + 1}) and (max-width: #{$Large - 1}) {
+      @content;
+    }
+  }
+
+  @mixin above-large-below-extralarge {
+    @media only screen and (min-width: #{$Large + 1}) and (max-width: #{$Extra-large - 1}) {
+      @content;
+    }
+  }
+
+
+  @mixin headingColor{
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-family:$heading-family;
+    letter-spacing: $letter-spacing*1;
+    color: color(color-dark-text-base);
+    align-self: first baseline;
+    padding-left: 0.5rem;
+  }
+
+  @mixin subHeading{
+    align-self: first baseline;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+    text-transform: capitalize;
+    font-family: $navbar-family;
+    font-weight: 600;
+    color: color(color-dark-tenariary);
+    padding-left: 0.5rem;
+  }
+

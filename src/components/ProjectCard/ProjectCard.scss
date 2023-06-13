@@ -1,0 +1,28 @@
+@import "../../assets/styles/variables/variable.scss";
+
+.line__section {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .line {
+    height: 3px;
+    @include radius(0.4rem);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 4.5px;
+    background: #dd0833;  /* fallback for old browsers */
+    
+    background: linear-gradient(to right, #062ef7, #dc0a34); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+  
+  .heading {
+    position: relative;
+    z-index: 1;
+  }
+  

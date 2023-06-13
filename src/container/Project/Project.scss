@@ -1,0 +1,80 @@
+@import '../../assets/styles/variables/variable.scss';
+
+.project__section{
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 2rem;
+  max-width: 1280px;
+  background-color: #030f30;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+ 
+@include max-screen($Small ){
+  max-width: 100%;
+  
+}
+
+
+ 
+   .project__section__heading{
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    font-family:$heading-family;
+    letter-spacing: $letter-spacing*1;
+    color: color(color-dark-text-base);
+    align-self: first baseline;
+    padding-left: 2rem;
+    @include max-screen($Small ){
+      align-self: center;
+      font-size: 1.2rem;
+    }
+
+    @include  small-to-medium{
+      font-size: 1.9rem;
+      align-self: center;
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+    }
+    @include above-medium-below-large{
+     
+      margin-top: 5rem;
+      align-items: center;
+      }
+
+      @include above-large-below-extralarge{
+        align-self: center;
+      }
+
+
+   }
+}
+
+.project__wrapper__section {
+   display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 2rem;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+
+    @include max-screen($Medium ){
+      grid-template-columns: repeat(1,auto);
+    }
+
+    @include max-screen($Small){
+      grid-template-columns: repeat(1,auto);
+    }
+
+   @include above-medium-below-large{
+    grid-template-columns: repeat(2,auto);
+    }
+
+    @include above-large-below-extralarge{
+      grid-template-columns: repeat(2,auto);
+    }
+
+    
+  }

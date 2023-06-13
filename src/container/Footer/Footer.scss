@@ -1,0 +1,33 @@
+@import '../../assets/styles/variables/variable.scss';
+
+.footer__body--section{
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-items: center;
+   .footer__section--wrapper{
+    width: 100%;
+    height: auto;
+    max-width:1280px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: color(color-dark-secondary);
+
+    .footer__lead--content {
+        font-size: 1.9rem;
+        text-transform: capitalize;
+        font-family: $navbar-family;
+        color: rgb(216, 199, 199); /* Adjust the font size as desired */
+      }
+      
+      .footer--name {
+        border-left: 3px solid rgb(216, 199, 199); /* Add a left border to the name */
+        padding-left: 12px;
+         font-family: $crimson-family;
+      }
+      
+   }
+
+}

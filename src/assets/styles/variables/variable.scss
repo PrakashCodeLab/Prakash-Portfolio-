@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Crimson+Text:wght@400;700&family=Oswald:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:ital,wght@0,700;1,400&family=Source+Sans+Pro:wght@300;400;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,600;0,700;1,500;1,700&family=Lora:ital,wght@0,400;0,700;1,400;1,500;1,600;1,700&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,700;1,400&family=Source+Sans+3:wght@200;400;700&family=Work+Sans:wght@400;700&display=swap');
+
+
+@import '../colors/colors.scss';
+@import '../mixins/mixins.scss';
+
+
+$font-family-bebas: 'Bebas Neue', sans-serif;
+$font-family-oswald: 'Oswald', sans-serif;
+$font-family-poppins: 'Poppins', sans-serif;
+
+$crimson-family: 'Crimson Text', serif;
+
+$playfair-family: 'Playfair Display', serif;
+
+$source-family: 'Source Sans Pro', sans-serif;
+$size:1rem;
+$letter-spacing:0.09em;
+
+
+
+$navbar-family: 'Montserrat', sans-serif;
+$heading-family: 'Raleway', sans-serif;
+$btn-family: 'Work Sans', sans-serif;
+$light-para-family: 'Lora', serif;
+$sub-head-font-family: 'Archivo Narrow', sans-serif;
+$para-family: 'Source Code Pro', monospace;
+$para-sans-font-family: 'Source Sans 3', sans-serif;
+
