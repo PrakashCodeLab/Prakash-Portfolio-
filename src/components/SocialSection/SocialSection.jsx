@@ -7,7 +7,7 @@ import {
   AiFillTwitterSquare,
   AiFillLinkedin,
   AiFillGithub,
-  AiOutlineMail,
+  
   AiOutlineDownload,
 } from "react-icons/ai";
 const SocialSection = () => {
