@@ -8,6 +8,7 @@ import MobileNav from "./MobileNav";
 import "./Navbar.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 
+
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
@@ -44,8 +45,10 @@ const Navbar = () => {
 
         {navbar ? <MobileNav /> : ""}
       </div>
-
+      
       <div onClick={NavbarChange} className="navbar__hamburger__section">
+      
+        
         {navbar ? (
           <CiCircleRemove className="navicon hamburger" data-aos="fade-left" />
         ) : (

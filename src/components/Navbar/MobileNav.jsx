@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
 const MobileNav = () => {
   useEffect(() => {
     AOS.init({
@@ -13,6 +14,7 @@ const MobileNav = () => {
   return (
     <>
       <ul data-aos="fade-right" className="navbar__list--mobile">
+    
         <li className="list-mobile">
           <a className="mobile-link" href="/">
             home

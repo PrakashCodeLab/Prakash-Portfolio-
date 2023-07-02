@@ -9,17 +9,18 @@ import Icon5 from "../../assets/images/tech/sass.png";
 import Icon6 from "../../assets/images/tech/pngwing.com.png";
 import Icon7 from "../../assets/images/tech/bootstrap.png";
 import Icon8 from "../../assets/images/tech/visual-studio-team-services-github.png";
-
+import Icon9 from "../../assets/images/tech/nextjs-icon.png";
 const Technology = () => {
   const technology = [
     { title: "html", icon: Icon1, id: 1 },
     { title: "css", icon: Icon2, id: 2 },
     { title: "javascript", icon: Icon3, id: 3 },
-    { title: "react js", icon: Icon4, id: 4 },
-    { title: "scss", icon: Icon5, id: 5 },
-    { title: "bootstrap", icon: Icon6, id: 6 },
-    { title: "tailwind css", icon: Icon7, id: 7 },
-    { title: "git & github", icon: Icon8, id: 8 },
+    { title: "reactjs", icon: Icon4, id: 4 },
+    { title: "Nextjs", icon: Icon9, id: 5 },
+    { title: "scss", icon: Icon5, id: 6 },
+    { title: "bootstrap", icon: Icon6, id: 7 },
+    { title: "tailwind css", icon: Icon7, id: 8 },
+    { title: "git & github", icon: Icon8, id: 9 },
   ];
   return (
     <section id="aboutMe" className="technology__section">

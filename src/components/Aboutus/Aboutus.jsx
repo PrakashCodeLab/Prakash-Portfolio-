@@ -20,7 +20,7 @@ const Aboutus = () => {
         skills in{" "}
         <strong className="strong--tech">
           {" "}
-          HTML, CSS, JavaScript, React, Git, GitHub, Sass, Tailwind, and
+          HTML, CSS, Sass, JavaScript, React, Nextjs, Git & GitHub, Tailwind, and
           Bootstrap{" "}
         </strong>{" "}
         through online resources. I have successfully completed several

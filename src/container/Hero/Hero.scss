@@ -94,13 +94,13 @@
     }
 
     .lead__designation {
-      font-size: 1.27rem;
+      font-size: 1rem;
       color: color(color-faded);
       padding-bottom: 0.5rem;
       padding-top: 0.5rem;
       max-width: 500px;
      
-      line-height: 2.5rem;
+      line-height: 2rem;
       align-self: first baseline;
       letter-spacing: $letter-spacing;
       font-family: $para-family;
@@ -122,6 +122,12 @@
     line-height: 2.5rem;
    
      }
+   
+     strong{
+      color: #2bb4d3;
+     }
+
+
     }
 
     .btn-resume {

@@ -16,12 +16,8 @@ const Hero = () => {
       >
         <p className="lead">Hi, my name is</p>
         <Line heading={"prakash!"} />
-        <p className="lead__designation">
-          “I’m passionate about software development and I’m skilled in HTML,
-          css , JavaScript, and React. I’m now looking for a junior dev position
-          as I recently learned how to code by myself.”
-        </p>
-
+        <p className="lead__designation">I am deeply passionate about software development, and I possess proficiency in essential programming languages such as <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>React</strong>, and <strong>Next.js</strong>. Currently, I am actively seeking a junior developer position, as I have recently acquired coding skills through self-learning.
+</p>
         <a href={MyResume} download className="btn-resume">
           my resume
         </a>
