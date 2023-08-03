@@ -3,7 +3,7 @@ import React from "react";
 const DestopNav = () => {
   return (
     <>
-      <ul className="navbar__list--desktop">
+      <ul className="navbar__list--desktop ">
         <li>
           <a className="text-primary" href="/">home</a>
         </li>
