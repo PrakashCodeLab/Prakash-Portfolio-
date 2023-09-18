@@ -1,8 +1,9 @@
 import "./ProjectCard.scss";
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
-import { BiLinkExternal } from "react-icons/bi";
+import { BiLinkExternal  } from "react-icons/bi";
 import { DiJavascript1 } from "react-icons/di";
 import { BsGithub } from "react-icons/bs";
+import {BiLogoTypescript} from 'react-icons/bi'
 import { BsFiletypeScss } from "react-icons/bs";
 import {TbBrandNextjs,TbBrandTailwind} from 'react-icons/tb'
 import ProjectImg1 from "../../assets/images/project/website app.png";
@@ -14,13 +15,31 @@ import ProjectImg6 from "../../assets/images/project/prakash portfolio.png";
 import ProjectImg7 from "../../assets/images/project/nextmeta.jpg";
 import ProjectImg8 from "../../assets/images/project/tech blog.jpg";
 import ProjectImg9 from "../../assets/images/project/helpscout.jpg"
-
+import projectImg10 from '../../assets/images/project/nike-project.jpg';
 
 
 const ProjectCard = () => {
   const cardData = [
     {
       id: 1,
+      title: "nike website",
+      description:
+        "I recreated the nike website using Next.js, TypeScript, SCSS, and Tailwind CSS as a practice project for web development.",
+      poster: projectImg10,
+
+      tech1: "typescript",
+      tech2:'tailwindCss',
+      tech3: "nextjs ",
+      webLink: "https://shoes-nike.vercel.app/",
+      gitLink: "https://github.com/PrakashCodeLab/shoes-nike.git",
+      icon1: <BiLogoTypescript className="icon" />,
+      icon2: <TbBrandTailwind className="icon" />,
+      
+
+      icon3: <TbBrandNextjs className="icon" />,
+    },
+    {
+      id: 2,
       title: "Help scout",
       description:
         "I recreated the Help Scout website using Next.js, TypeScript, SCSS, and Tailwind CSS as a practice project for web development.",
@@ -38,7 +57,7 @@ const ProjectCard = () => {
       icon3: <TbBrandNextjs className="icon" />,
     },
     {
-      id: 2,
+      id: 3,
       title: "my portfolio",
       description:
         "This project showcases my skills in developing responsive and visually appealing web applications using SCSS and React.",
@@ -53,7 +72,7 @@ const ProjectCard = () => {
       icon2: <FaReact className="icon" />,
     },
     {
-      id: 3,
+      id: 4,
       title: "MovieFlix",
       description:
         "Create a seamless and captivating movie search website, MovieFlix, using Next.js and Tailwind CSS.  movie collection with a search bar powered by the OMDB API  ",
@@ -68,7 +87,7 @@ const ProjectCard = () => {
        icon2: <TbBrandNextjs className="icon" />,
     },
     {
-      id: 4,
+      id: 5,
       title: "Sushi Restaurant",
       description:
         "Create a visually stunning and user-friendly website using React, showcasing the menu, services, and a contemporary sushi  japanese restaurant feel the taste",
@@ -81,7 +100,7 @@ const ProjectCard = () => {
       icon2: <FaReact className="icon" />,
     },
     {
-      id: 5,
+      id: 6,
       title: "tech blog",
       description:
         "Tech blog! Built with Next.js , I utilized the efficiency of Sass and Tailwind CSS to bring you concise, cutting-edge content in a sleek and responsive design.",
@@ -100,7 +119,7 @@ const ProjectCard = () => {
     },
    
     {
-      id: 6,
+      id: 7,
       title: "Metaverse nextjs ",
       description:
         "Metaverse UI, Designed with Next.js and enhanced by the versatility of Sass and the Tailwind CSS, this project serves as a perfect playground for  Next.js skills ",
@@ -117,7 +136,7 @@ const ProjectCard = () => {
     },
    
     {
-      id: 7,
+      id: 8,
       title: "GPT3 Chat UI",
       description:
         " Develop a responsive website using React to provide users with an interactive and user-friendly interface for engaging in AI-driven conversations powered by GPT-3.",
@@ -132,7 +151,7 @@ const ProjectCard = () => {
     },
    
     {
-      id: 8,
+      id: 9,
       title: "Promising Startup",
       description:
         " Develop a captivating and responsive landing page using HTML, CSS, and JavaScript of the startup company, and driving conversions.",
@@ -148,7 +167,7 @@ const ProjectCard = () => {
     },
    
     {
-      id: 9,
+      id: 10,
       title: "CineTop100",
       description:
         " Develop a feature-rich movie application  for exploring  cinematic gems ,Rapid API to fetch movie data, providing users with comprehensive details.",

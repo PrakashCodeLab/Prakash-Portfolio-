@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { CiCircleRemove } from "react-icons/ci";
 import NavIcon from "../Navicon/NavIcon";
-import ImgLogo from "../../assets/images/logos/Color logo with background.png";
+
 import DestopNav from "./DestopNav";
 import MobileNav from "./MobileNav";
 import "./Navbar.scss";
-import { BrowserRouter as Router } from "react-router-dom";
+
 
 
 const Navbar = () => {
@@ -16,13 +16,17 @@ const Navbar = () => {
     setNavbar(!navbar);
   };
 
-  const ScreenChange = () => {
-    if (window.innerWidth >= 768) {
-      setNavbar(false);
-    }
-  };
+ 
 
   useEffect(() => {
+
+    const ScreenChange = () => {
+      if (window.innerWidth >= 768) {
+        setNavbar(false);
+      }
+    };
+
+
     window.addEventListener("resize", ScreenChange);
 
     return () => {

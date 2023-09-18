@@ -1,105 +1,109 @@
 @import '../../assets/styles/variables/variable.scss';
 
 
-.navbar__container{
-    width: 100%;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1.5rem;
-    padding: 1rem;
-   @include radius(0.8rem);
-    position: relative;
-    z-index: 9999;
-     background-color: color( bg-navbar);
-    @include  max-screen($Medium ){
-        justify-content: space-around;
+.navbar__container {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  @include radius(0.8rem);
+  position: relative;
+  z-index: 9999;
+  background-color: color(bg-navbar);
+
+  @include max-screen($Medium) {
+    justify-content: space-around;
   }
 
-  @include above-medium-below-large{
+  @include above-medium-below-large {
     width: 100%;
     justify-content: space-around;
   }
 
-  @include above-large-below-extralarge{
-   justify-content:space-around;
+  @include above-large-below-extralarge {
+    justify-content: space-around;
   }
 
-  
 
 
 
 
 
-    
-    
+
+
+
 }
 
-.navbar__list__section{
-   
-    .navbar__list--desktop {
-        width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem;
-      @include  max-screen($Medium ){
-        display: none;
-  } 
+.navbar__list__section {
 
-  @include above-medium-below-large{
+  .navbar__list--desktop {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 3rem;
-  }
 
-      li{
-        a{
-            font-size: 1.5rem;
-            color: color(color-dark-text-primary);
-            text-transform: uppercase;
-            font-weight: 800;
-            font-family: $navbar-family;
-            letter-spacing: $letter-spacing;
-            transition: all 0.7s ease-in-out;
-            &:hover{
-              color: rgb(221, 106, 12); 
-             
-            } 
+    @include max-screen($Medium) {
+      display: none;
+    }
 
-           
+    @include above-medium-below-large {
+      gap: 3rem;
+    }
 
-            @include above-medium-below-large{
-                font-size: 1.12rem;
-              }
+    li {
+      a {
+        font-size: 1.5rem;
+        color: color(color-dark-text-primary);
+        text-transform: uppercase;
+        font-weight: 800;
+        font-family: $navbar-family;
+        letter-spacing: $letter-spacing;
+        transition: all 0.7s ease-in-out;
 
-              @include above-large-below-extralarge{
-               font-size: 1.3;
-              }
+        &:hover {
+          color: rgb(221, 106, 12);
+
+        }
+
+
+
+        @include above-medium-below-large {
+          font-size: 1.12rem;
+        }
+
+        @include above-large-below-extralarge {
+          font-size: 1.3;
         }
       }
     }
+  }
 
- .navbar__list--mobile{
+  .navbar__list--mobile {
     display: flex;
     width: 100%;
     height: 83.5vh;
     flex-direction: column;
-    justify-content:center;
-    align-items:first baseline;
-    
+    justify-content: center;
+    align-items: first baseline;
+
     position: fixed;
     z-index: 9998;
     top: 5.5rem;
     gap: 2rem;
     left: 0;
     padding: 2rem;
-    background-color: color( bg-navbar);
-   
-    
-  
-    
+    background-color: color(bg-navbar);
+
+
+
+
     .list-mobile {
       padding-left: 5rem;
+
       .mobile-link {
         font-size: 2rem;
         color: color(color-dark-text-primary);
@@ -112,47 +116,42 @@
 
         &:hover {
           color: rgb(221, 106, 12);
-        
-         
+
+
         }
       }
-     
-   
-
-    } 
-   
-    
-   
-    
 
 
 
-     
-
- }
-
-
-} 
-
-.navbar__hamburger__section{
-    width: 50px;
-    height: 60px;
-   
-    display: none;
-  
-
-    @include  max-screen($Medium ){
-          display: block;
     }
 
 
-    .navicon{
-        width: 100%;
-        height:100%;
-        color: color(color-dark-text-primary);
-    }
+
+
+
+
+
+
+
+  }
+
+
 }
 
+.navbar__hamburger__section {
+  width: 50px;
+  height: 60px;
+  display: none;
 
 
+  @include max-screen($Medium) {
+    display: block;
+  }
 
+
+  .navicon {
+    width: 100%;
+    height: 100%;
+    color: color(color-dark-text-primary);
+  }
+}
